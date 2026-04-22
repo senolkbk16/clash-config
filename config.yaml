@@ -1,0 +1,30 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+
+proxies:
+  - name: "183 lu reality"
+    type: vless
+    server: 185.7.242.112
+    port: 443
+    uuid: 0b96bd60-d858-466c-a9f5-ac85bccc1d5d
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: web.whatsapp.com
+    reality-opts:
+      public-key: VNQiZU9LN4QBVnR94-RUcFgd3H3RCZDfaVvblrdfKxQ
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+
+proxy-groups:
+  - name: "Proxy"
+    type: select
+    proxies:
+      - "183 lu reality"
+
+rules:
+  - MATCH,Proxy
