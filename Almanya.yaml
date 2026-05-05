@@ -1,0 +1,24 @@
+proxies:
+  - name: "DE Reality"
+    type: vless
+    server: panel.senno.com.tr
+    port: 443
+    uuid: f6fa972a-d4de-4b09-9666-12e15346616f
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: web.whatsapp.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 2WjzueT8uzFMDu_FamcQ6QeuFvKKOowlkWRDZEG0tGQ
+      short-id: 9a7b6c5d4e3f2a1b
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "DE Reality"
+
+rules:
+  - MATCH,PROXY
