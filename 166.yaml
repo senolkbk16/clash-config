@@ -1,0 +1,24 @@
+proxies:
+  - name: "166 TR Reality"
+    type: vless
+    server: sfr.senno.com.tr
+    port: 443
+    uuid: d8dfb16e-f2a2-4daa-834e-43f4ea67628c
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: web.whatsapp.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -emlwE8MIBMdqLbZ1K9o1MO8E6w8EPOgzQH-HzbnCRU
+      short-id: 6ba85179e30d4fc2
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "166 TR Reality"
+
+rules:
+  - MATCH,PROXY
