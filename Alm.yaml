@@ -1,0 +1,42 @@
+proxies:
+  - name: "FR Reality"
+    type: vless
+    server: fr.senno.com.tr
+    port: 443
+    uuid: 289f8a4c-bb08-414e-bc99-e6478679982f
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: api.whatsapp.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GAT1OZ0pEcf7NCQ2qNBIB999RzVkcILFrX6JmhPTojM
+      short-id: a1b2c3d4e5f6a7b8
+
+  - name: "DE Reality"
+    type: vless
+    server: panel.senno.com.tr
+    port: 443
+    uuid: f6fa972a-d4de-4b09-9666-12e15346616f
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: web.whatsapp.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 2WjzueT8uzFMDu_FamcQ6QeuFvKKOowlkWRDZEG0tGQ
+      short-id: 9a7b6c5d4e3f2a1b
+
+proxy-groups:
+  - name: "AUTO"
+    type: url-test
+    proxies:
+      - "FR Reality"
+      - "DE Reality"
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+rules:
+  - MATCH,AUTO
