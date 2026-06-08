@@ -1,33 +1,100 @@
-Protokol: VLESS
-Sunucu (Host): 195.85.201.251
-Port: 443
-
-UUID:
-b81a0cdc-a32e-4f25-bc7f-30ffc85dac55
-
-Transport:
-TCP
-
-Şifreleme:
-none
-
-Security:
-REALITY
-
-SNI:
-api.whatsapp.net
-
-Fingerprint:
-chrome
-
-Public Key (pbk):
-UL6f5nkVHm6C8O3u77a8lbyeakY94wZ_Vj1BCnVMgiA
-
-Short ID (sid):
-a1b2c3d4e5f6a7b8
-
-Flow:
-(boş)
-
-Remark (İsim):
-0g9a2hye5m
+{
+  "id": 1,
+  "userId": 0,
+  "up": 122382064,
+  "down": 526745946,
+  "total": 0,
+  "remark": "",
+  "enable": true,
+  "expiryTime": 0,
+  "trafficReset": "never",
+  "lastTrafficResetTime": 0,
+  "listen": "",
+  "port": 443,
+  "protocol": "vless",
+  "settings": {
+    "clients": [
+      {
+        "auth": "3hc3hh2oidci5w4t",
+        "comment": "",
+        "created_at": 1780941720445,
+        "email": "0g9a2hye5m",
+        "enable": true,
+        "expiryTime": 0,
+        "flow": "xtls-rprx-vision",
+        "id": "b81a0cdc-a32e-4f25-bc7f-30ffc85dac55",
+        "limitIp": 0,
+        "password": "k3el2fbaxvmijr88",
+        "reset": 0,
+        "security": "auto",
+        "subId": "1dz09x10cuy1m9h7",
+        "tgId": 0,
+        "totalGB": 0,
+        "updated_at": 1780941873000
+      }
+    ],
+    "decryption": "none",
+    "encryption": "none",
+    "testseed": [
+      900,
+      500,
+      900,
+      256
+    ]
+  },
+  "streamSettings": {
+    "network": "tcp",
+    "tcpSettings": {
+      "acceptProxyProtocol": false,
+      "header": {
+        "type": "none"
+      }
+    },
+    "security": "reality",
+    "realitySettings": {
+      "show": false,
+      "xver": 0,
+      "target": "api.whatsapp.net:443",
+      "serverNames": [
+        "api.whatsapp.net"
+      ],
+      "privateKey": "uIGuEsUNAOceaFnraIaaD4N4to3jauaNkxZDBA7W4lA",
+      "minClientVer": "",
+      "maxClientVer": "",
+      "maxTimediff": 0,
+      "shortIds": [
+        "a1b2c3d4e5f6a7b8"
+      ],
+      "mldsa65Seed": "",
+      "settings": {
+        "publicKey": "UL6f5nkVHm6C8O3u77a8lbyeakY94wZ_Vj1BCnVMgiA",
+        "fingerprint": "chrome",
+        "serverName": "",
+        "spiderX": "/",
+        "mldsa65Verify": ""
+      }
+    }
+  },
+  "tag": "in-443-tcp",
+  "sniffing": {
+    "enabled": false
+  },
+  "clientStats": [
+    {
+      "id": 1,
+      "inboundId": 1,
+      "enable": true,
+      "email": "0g9a2hye5m",
+      "uuid": "b81a0cdc-a32e-4f25-bc7f-30ffc85dac55",
+      "subId": "1dz09x10cuy1m9h7",
+      "up": 121391988,
+      "down": 528739628,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0,
+      "lastOnline": 1780943010009
+    }
+  ],
+  "nodeId": null,
+  "fallbackParent": null
+}
