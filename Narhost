@@ -1,0 +1,33 @@
+Protokol: VLESS
+Sunucu (Host): 195.85.201.251
+Port: 443
+
+UUID:
+b81a0cdc-a32e-4f25-bc7f-30ffc85dac55
+
+Transport:
+TCP
+
+Şifreleme:
+none
+
+Security:
+REALITY
+
+SNI:
+api.whatsapp.net
+
+Fingerprint:
+chrome
+
+Public Key (pbk):
+UL6f5nkVHm6C8O3u77a8lbyeakY94wZ_Vj1BCnVMgiA
+
+Short ID (sid):
+a1b2c3d4e5f6a7b8
+
+Flow:
+(boş)
+
+Remark (İsim):
+0g9a2hye5m
