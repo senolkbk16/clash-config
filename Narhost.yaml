@@ -1,7 +1,7 @@
 proxies:
   - name: "0g9a2hye5m"
     type: vless
-    server: 195.85.201.251
+    server: narhost.senno.com.tr
     port: 443
     uuid: b81a0cdc-a32e-4f25-bc7f-30ffc85dac55
     network: tcp
